@@ -1,0 +1,19 @@
+@import "../../variables.scss";
+
+.breadcrumb{
+    margin: 1.5rem 0;
+    font-size: $mainFontSize;
+    a{
+        text-decoration: none;
+    }
+}
+
+.parent{
+    line-height: 20px;    
+    color: #CCCCCC !important;
+}
+
+.active{
+    line-height: 20px;
+    color: $blue;
+}

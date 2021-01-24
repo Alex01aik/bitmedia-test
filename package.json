@@ -1,0 +1,32 @@
+{
+  "name": "bitmedia-test",
+  "version": "1.0.0",
+  "description": "Test task for Bitmedia Labs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon app",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alex01aik/bitmedia-test.git"
+  },
+  "author": "Oleksandr Petrov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alex01aik/bitmedia-test/issues"
+  },
+  "homepage": "https://github.com/Alex01aik/bitmedia-test#readme",
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "recharts": "^2.0.3",
+    "sqlite3": "^5.0.1"
+  }
+}

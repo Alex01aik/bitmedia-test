@@ -1,0 +1,57 @@
+
+@import "../../variables.scss";
+.userWrapper{
+    padding: 0 130px 1rem 130px;
+}
+.panel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .fullname{
+        font-size: 32px; 
+        line-height: 39px;
+    }
+    .period{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        span{
+            font-size: $mainFontSize;
+            line-height: 20px;    
+            color: #CCCCCC;
+        }
+        input{
+            border: 0;
+            color: $blue;
+            text-align: end;
+        }
+    }
+}
+.chart{
+    max-width: 1172px;
+    .chartTitle{
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+    }
+}
+@media screen and (max-width: 768px){
+    .userWrapper{
+        padding: 1rem 3rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .fullname{
+        width: 30vw;
+    }
+    .userWrapper{
+        padding: 0 1rem;
+    }
+}
+@media screen and (max-width: 414px){
+    .panel{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

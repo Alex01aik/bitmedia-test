@@ -1,0 +1,24 @@
+@import "../../variables.scss";
+.header{
+    width: 100%;
+    background: linear-gradient(90.95deg, #255D8B 2.29%, $blue 96.79%);
+    padding-top: 10px;
+    padding-bottom: 13px;
+    color: white;
+    .logo{
+        margin: 0;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 49px;
+        margin-left: 130px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .header {
+        display: flex;
+        .logo{
+            margin: auto;
+        }
+    }
+}

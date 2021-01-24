@@ -1,0 +1,25 @@
+@import "../../variables.scss";
+.usersWrapper{
+    padding: 0 130px 1rem 130px;
+}
+
+@media screen and (max-width: 992px){
+    .usersWrapper{
+        padding-inline: 1rem;
+        .breadcrumb{
+            margin-left: calc(130px - 1rem);
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .usersWrapper{
+        padding-inline: 0;
+    }
+}
+@media screen and (max-width: 480px){
+    .usersWrapper{
+        .breadcrumb{
+            margin-left: 1rem;
+        }
+    }
+}

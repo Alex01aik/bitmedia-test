@@ -1,0 +1,58 @@
+@import "../../variables.scss";
+
+.pagination{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.arrow{
+    border: solid #F1F1F1;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 8px;
+    margin: 38px;
+}
+
+.left{
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.right{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.activeArrow{
+    border: solid $blue;
+    border-width: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.page{
+    text-align: center;
+    line-height: 48px;
+    width: 48px;
+    height: 48px;
+    margin: 24px 8px;
+    border: 2px solid #F1F1F1;
+    box-sizing: border-box;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.activePage{
+    color: white;
+    background: $blue;
+    border: none;
+}
+
+@media screen and (max-width: 480px){
+    .page{
+        line-height: 36px;
+        width: 36px;
+        height: 36px;
+        margin: 24px 8px;
+        border-radius: 8px;
+    }
+}

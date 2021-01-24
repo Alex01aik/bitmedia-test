@@ -1,0 +1,57 @@
+@import "../../variables.scss";
+.footer{
+    display: flex;
+    padding: max(17px) 130px;
+    min-height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: $mainFontSize;
+    line-height: 142%;
+
+    .footerLogo{
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .rightsReserved{
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 767px){
+    .footer{
+        .rightsReserved{
+            text-align: center;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width: 650px){
+    .footer{
+        display: grid;
+        grid-gap: 2rem;
+        grid-template: "a a"
+                       "b c";
+        .footerLogo{
+            grid-area: a;
+        }
+        .rightsReserved{
+            font-size: 8px;
+            grid-area: b;
+            text-align: start;
+        }
+        .copyrigths{
+            font-size: 8px;
+            grid-area: c;
+            text-align: end;
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .footer{
+        padding: 1rem 2rem;
+    }
+}
